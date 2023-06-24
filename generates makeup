@@ -1,0 +1,19 @@
+import random
+
+def generate_makeup():
+    lipstick_shades = ["Red", "Pink", "Nude", "Berry", "Coral"]
+    eyeshadow_palette = ["Neutral", "Smokey", "Rose Gold", "Bronze", "Purple"]
+    blush_colors = ["Peach", "Rose", "Coral", "Plum", "Mauve"]
+
+    lipstick = random.choice(lipstick_shades)
+    eyeshadow = random.choice(eyeshadow_palette)
+    blush = random.choice(blush_colors)
+
+    return lipstick, eyeshadow, blush
+
+lipstick, eyeshadow, blush = generate_makeup()
+
+print("Today's Makeup Combination:")
+print("Lipstick:", lipstick)
+print("Eyeshadow Palette:", eyeshadow)
+print("Blush Color:", blush)
